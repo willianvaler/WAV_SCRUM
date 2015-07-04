@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tasksByTeam" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="574191f9-40e8-4469-a104-603f2fd00207">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idsprint" class="java.lang.Integer"/>
+	<parameter name="idteam" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select st.* from sprint s, team t, sprint_tasks st where s.ref_team = t.idteam and st.idsprint = s.idsprint and st.idsprint = $P{idsprint} and t.idteam =  $P{idteam}]]>
+	</queryString>
+	<field name="idsprint_tasks" class="java.lang.Integer"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="info" class="java.lang.String"/>
+	<field name="ref_item" class="java.lang.Integer"/>
+	<field name="classification" class="java.lang.String"/>
+	<field name="item_type" class="java.lang.String"/>
+	<field name="status" class="java.lang.Integer"/>
+	<field name="estimated" class="java.lang.Integer"/>
+	<field name="duration" class="java.lang.Integer"/>
+	<field name="proccess_started" class="java.sql.Date"/>
+	<field name="proccess_finished" class="java.sql.Date"/>
+	<field name="idsprint" class="java.lang.Integer"/>
+	<field name="scrum_user" class="java.lang.Integer"/>
+	<field name="status2" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="477" y="0" width="78" height="79" uuid="f1c77745-722b-4a71-8de8-f6f77c77f425"/>
+				<imageExpression><![CDATA["C:\\Users\\Willian\\Desktop\\SCRUM\\src\\icons\\icon-scrum.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="130" y="13" width="252" height="53" uuid="db609ae1-9132-408e-8593-9a537ce73132"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Tarefas da equipe]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="47" height="20" uuid="32cfd9c7-17d6-413b-982f-34803318d44c"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="2" width="100" height="20" uuid="8c81eba0-0373-4dbd-8fbb-7078fa7897fd"/>
+				<text><![CDATA[Título]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="2" width="100" height="20" uuid="f131e4e4-52df-4891-b2ff-ca6a19d214a1"/>
+				<text><![CDATA[Descrição]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="2" width="77" height="20" uuid="40388900-7330-482c-bd7b-92385213f912"/>
+				<text><![CDATA[Data de início]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="2" width="125" height="20" uuid="48416a1f-8ea7-4901-ba14-b40fbdf1b907"/>
+				<text><![CDATA[Situação]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="2" width="97" height="20" uuid="c96c6ac7-cd83-4938-8cfa-7989c71dfe36"/>
+				<text><![CDATA[Data fim]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="29" height="20" uuid="7ac2300e-c498-4fa2-8e86-b560d59be9d6"/>
+				<textFieldExpression><![CDATA[$F{idsprint_tasks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="100" height="20" uuid="c48ef817-ebd6-4d53-b16b-9024048e838f"/>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="0" width="100" height="20" uuid="0c6ea371-c888-4aa1-856d-8dc48f6c8d7d"/>
+				<textFieldExpression><![CDATA[$F{info}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="77" height="20" uuid="2584c730-3c07-4a00-8b90-c42f32ac1dd7"/>
+				<textFieldExpression><![CDATA[$F{proccess_started}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="0" width="133" height="20" uuid="a04cc59a-5624-4dcf-a707-5deb284bc8e6"/>
+				<textFieldExpression><![CDATA[$F{status2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="325" y="0" width="97" height="20" uuid="cddca230-1021-412a-a1f3-1ead323d1771"/>
+				<textFieldExpression><![CDATA[$F{proccess_finished}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="34" width="100" height="20" uuid="20a95ee6-5ca5-424e-9613-e24590ceb74f"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="34" width="100" height="20" uuid="01635579-425e-4fbb-850d-84000dbcf78b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

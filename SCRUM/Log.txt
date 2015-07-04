@@ -1,0 +1,259 @@
+24/06/2015 19:58:51Insert Item |  | INSERT INTO sprint_items VALUES (DEFAULT,  'sasaassa', 'asasasas	', 'Baixo', 'Planejado', '1', 23, 12, 1, '22/04/2016', '22/04/2016') returning idsprint_items
+
+24/06/2015 20:04:29Update Task |  | UPDATE sprint_tasks SET  ref_item = 6, classification = 'Baixo', title = 'aaaaaaa', info = 'sasa', item_type = 'Planejado', status = 1, estimated = 2, duration = 2, proccess_started = '21/06/2015', proccess_finished = '21/06/2015', idsprint = 1 WHERE idsprint_tasks = 1
+
+24/06/2015 20:06:52Sprint Insert Error | ERROR: syntax error at or near ","
+  Posição: 91 | INSERT INTO sprint VALUES (DEFAULT, 'sprint do pretto', '24/06/2015', '10/07/2015', 3000, , 1, 1) returning idsprint
+
+24/06/2015 20:07:33Insert Sprint |  | INSERT INTO sprint VALUES (DEFAULT, 'sprint pretto', '24/06/2015', '10/07/2015', 3000, 0, 1, 1) returning idsprint
+
+24/06/2015 20:10:27Task Insert Error | ERROR: syntax error at or near ","
+  Posição: 120 | INSERT INTO sprint_tasks VALUES (DEFAULT , 'versao final', 'vou tentar passar na cadeira', 6, 'Médio', 'Planejado', 1, , 0, '', '', 11) returning idsprint_tasks
+
+24/06/2015 20:10:48Insert Task |  | INSERT INTO sprint_tasks VALUES (DEFAULT , 'versao final', 'vou tentar passar na cadeira', 6, 'Médio', 'Planejado', 1, 200, 0, '30/06/2015', '30/06/2015', 11) returning idsprint_tasks
+
+24/06/2015 20:13:25Item Insert Error | ERROR: syntax error at or near ","
+  Posição: 111 | INSERT INTO sprint_items VALUES (DEFAULT,  'titulo do item', 'desc do item', 'Muito Alto', 'Speed Lane', '2', , 0, 11, '', '') returning idsprint_items
+
+24/06/2015 20:13:54Insert Item |  | INSERT INTO sprint_items VALUES (DEFAULT,  'titulo do item', 'desc do item', 'Muito Alto', 'Speed Lane', '2', 500, 0, 11, '30/06/2015', '30/06/2015') returning idsprint_items
+
+27/06/2015 13:09:14Select Error | null | 
+
+27/06/2015 13:09:18Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:09:19Select Error | null | 
+
+27/06/2015 13:09:20Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:09:20Select Error | null | 
+
+27/06/2015 13:09:20Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:09:21Select Error | null | 
+
+27/06/2015 13:09:21Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:11:33Select Error | null | 
+
+27/06/2015 13:11:35Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:11:36Select Error | null | 
+
+27/06/2015 13:11:37Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:11:37Select Error | null | 
+
+27/06/2015 13:11:38Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:11:38Select Error | null | 
+
+27/06/2015 13:11:39Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:13:05Select Error | null | 
+
+27/06/2015 13:13:06Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:13:07Select Error | null | 
+
+27/06/2015 13:13:10Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:13:10Select Error | null | 
+
+27/06/2015 13:13:11Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:13:11Select Error | null | 
+
+27/06/2015 13:13:11Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:14:08Select Error | null | 
+
+27/06/2015 13:14:09Erro ao preencher tabela de itens por id sprint  | null | 
+
+27/06/2015 13:14:10Select Error | null | 
+
+27/06/2015 13:14:10Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 13:18:04Erro ao preencher tabela de tarefas | 0 | SELECT * FROM sprint_tasks WHERE idsprint = 11
+
+27/06/2015 13:21:05Erro ao preencher tabela de tarefas | 0 | SELECT * FROM sprint_tasks WHERE idsprint = 11
+
+27/06/2015 14:21:14Insert Task |  | INSERT INTO sprint_tasks VALUES (DEFAULT , 'sdsdds', 'dsdsdsddsd', 7, 'Baixo', 'Planejado', 1, 222, 0, '27/06/2015', '27/06/2015', 11) returning idsprint_tasks
+
+27/06/2015 14:23:03Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+27/06/2015 14:23:33Update Task |  | UPDATE sprint_tasks SET  ref_item = 5, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = null, proccess_started = '27/06/2015', proccess_finished = '27/06/2015', idsprint = 11 WHERE idsprint_tasks = 4
+
+27/06/2015 14:26:48Update Task |  | UPDATE sprint_tasks SET  ref_item = 5, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = 20, proccess_started = '27/06/2015', proccess_finished = '27/06/2015', idsprint = 11 WHERE idsprint_tasks = 4
+
+27/06/2015 14:27:06Task Update Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 227 | UPDATE sprint_tasks SET  ref_item = 5, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = 20, proccess_started = '27/06/2015', proccess_finished = 'null', idsprint = 11 WHERE idsprint_tasks = 4
+
+27/06/2015 14:36:09Task Update Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 227 | UPDATE sprint_tasks SET  ref_item = 5, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = 20, proccess_started = '27/06/2015', proccess_finished = 'null', idsprint = 11 WHERE idsprint_tasks = 4
+
+27/06/2015 14:37:25Task Update Error | null | 
+
+27/06/2015 14:59:50 | Insert Sprint |  | INSERT INTO sprint VALUES (DEFAULT, 'teste preenche', '27/06/2015', '27/07/2015', 20, 2, 1, 1) returning idsprint
+
+27/06/2015 18:28:44 | Select Error | null | 
+
+27/06/2015 18:28:47 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:29:00 | Select Error | null | 
+
+27/06/2015 18:29:02 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:30:20 | Select Error | null | 
+
+27/06/2015 18:30:21 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:33:43 | Select Error | null | 
+
+27/06/2015 18:33:46 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:33:49 | Select Error | null | 
+
+27/06/2015 18:33:51 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:33:55 | Select Error | null | 
+
+27/06/2015 18:33:55 | Erro ao preencher tabela de tarefas | null | 
+
+27/06/2015 18:36:04 | Select Error | null | 
+
+27/06/2015 18:36:05 | Erro ao preencher tabela de tarefas | null | 
+
+28/06/2015 11:00:16 |  | ERROR: column "idsprint_task" does not exist
+  Posição: 34 | SELECT * FROM sprint_tasks WHERE idsprint_task = 4
+
+28/06/2015 11:05:45 |  | ERROR: column "idsprint_task" does not exist
+  Posição: 34 | SELECT * FROM sprint_tasks WHERE idsprint_task = 4
+
+28/06/2015 11:07:11 |  | ERROR: column "idsprint_task" does not exist
+  Posição: 34 | SELECT * FROM sprint_tasks WHERE idsprint_task = 3
+
+28/06/2015 11:08:54 |  | ERROR: column "idsprint_task" does not exist
+  Posição: 34 | SELECT * FROM sprint_tasks WHERE idsprint_task = 3
+
+28/06/2015 11:09:44 | Task Update Error | null | 
+
+28/06/2015 11:13:15 | Task Update Error | null | 
+
+28/06/2015 11:13:41 | Task Update Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 250 | UPDATE sprint_tasks SET  ref_item = 6, classification = 'Baixo', title = 'versao final', info = 'vou tentar passar na cadeira', item_type = 'Planejado', status = 1, estimated = 200, duration = 0, proccess_started = '30/06/2015', proccess_finished = 'null', idsprint = 11 WHERE idsprint_tasks = 2
+
+28/06/2015 11:16:18 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 7, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = 0, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11 WHERE idsprint_tasks = 3
+
+28/06/2015 11:16:18 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:16:28 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:21:53 |  | null | SELECT * FROM sprint_tasks WHERE idsprint_tasks = 3
+
+28/06/2015 11:21:53 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:22:06 | Update Item |  | UPDATE sprint_items SET title = 'zxzx', info = 'zxzxzx', classification = 'Baixo', item_type = 'Planejado', status = 1, estimated = 22, duration = 0, proccess_started = '12/12/2001', proccess_finished = '12/12/2001', sprint = 1 where idsprint_items = 8
+
+28/06/2015 11:29:40 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:30:54 | Task Insert Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 126 | INSERT INTO sprint_tasks VALUES (DEFAULT , 'sass', 'asasasasasasasasasas', 5, 'Médio', 'Planejado', 1, 22, 12, '22/04/2012', 'null', 1) returning idsprint_tasks
+
+28/06/2015 11:30:54 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:33:27 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:33:49 | Task Insert Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 118 | INSERT INTO sprint_tasks VALUES (DEFAULT , 'asas', 'asasasasasas', 5, 'Baixo', 'Planejado', 1, 22, 12, '22/04/2012', 'null', 1) returning idsprint_tasks
+
+28/06/2015 11:33:49 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:34:38 | Task Insert Error | ERROR: invalid input syntax for type date: "null"
+  Posição: 118 | INSERT INTO sprint_tasks VALUES (DEFAULT , 'asas', 'asasasasasas', 5, 'Baixo', 'Planejado', 1, 22, 12, '22/04/2012', 'null', 1) returning idsprint_tasks
+
+28/06/2015 11:34:38 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:36:49 | Insert Task |  | INSERT INTO sprint_tasks VALUES (DEFAULT , 'asas', 'asasasasasas', 5, 'Baixo', 'Planejado', 1, 22, 12, '22/04/2012', null, 1) returning idsprint_tasks
+
+28/06/2015 11:37:11 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 11:38:10 | Erro ao preencher tabela de tarefas | null | SELECT * FROM sprint_tasks WHERE title LIKE '%%'
+
+28/06/2015 14:54:24 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 5, classification = 'Baixo', title = 'asas', info = 'asasasasasas', item_type = 'Planejado', status = 1, estimated = 22, duration = 12, proccess_started = '22/04/2012', proccess_finished = null, idsprint = 1 WHERE idsprint_tasks = 5
+
+28/06/2015 14:56:45 | Insert Task |  | INSERT INTO sprint_tasks VALUES (DEFAULT , 'saasas', 'asasasasasasasas', 10, 'Muito Alto', 'Planejado', 1, 50, null, '20/07/2015', null, 11) returning idsprint_tasks
+
+28/06/2015 15:14:27 | Update Item |  | UPDATE sprint_items SET title = 'titulo do item', info = 'desc do item', classification = 'Muito Alto', item_type = 'Speed Lane', status = 2, estimated = 500, duration = 0, proccess_started = '30/06/2015', proccess_finished = null, sprint = 11 where idsprint_items = 10
+
+28/06/2015 15:24:14 | Update Team |  | UPDATE team SET name = 'default team',total_participants = 1, scrum_master = 2 WHERE idteam = 1
+
+28/06/2015 17:09:32 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Muito Alto', title = 'saasas', info = 'asasasasasasasas', item_type = 'Planejado', status = 1, estimated = 50, duration = 0, proccess_started = '20/07/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Em pausa' WHERE idsprint_tasks = 6
+
+28/06/2015 17:13:37 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Muito Alto', title = 'saasas', info = 'asasasasasasasas', item_type = 'Planejado', status = 1, estimated = 50, duration = 0, proccess_started = '20/07/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Em pausa' WHERE idsprint_tasks = 6
+
+28/06/2015 17:53:38 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Muito Alto', title = 'saasas', info = 'asasasasasasasas', item_type = 'Planejado', status = 2, estimated = 50, duration = 20, proccess_started = '20/07/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Em pausa' WHERE idsprint_tasks = 6
+
+28/06/2015 17:54:36 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 1, estimated = 222, duration = 230, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Iniciado' WHERE idsprint_tasks = 3
+
+28/06/2015 17:54:53 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 2, estimated = 222, duration = 230, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Iniciado' WHERE idsprint_tasks = 3
+
+28/06/2015 17:58:35 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 2, estimated = 222, duration = 250, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Iniciado' WHERE idsprint_tasks = 3
+
+28/06/2015 17:59:27 | Update Item |  | UPDATE sprint_items SET title = 'titulo do item', info = 'desc do item', classification = 'Muito Alto', item_type = 'Speed Lane', status = 2, estimated = 500, duration = 250, proccess_started = '30/06/2015', proccess_finished = null, sprint = 11 where idsprint_items = 10
+
+28/06/2015 17:59:38 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 2, estimated = 222, duration = 260, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 2, status2 = 'Iniciado' WHERE idsprint_tasks = 3
+
+28/06/2015 19:19:26 | Select Error | null | 
+
+28/06/2015 19:19:30 | Select Error | null | 
+
+28/06/2015 19:19:30 | Select Error | null | 
+
+28/06/2015 19:19:31 | Select Error | null | 
+
+28/06/2015 20:36:29 | Delete Sprint |  | DELETE FROM sprint WHERE idsprint = 12
+
+28/06/2015 21:00:01 | Report Error | java.lang.String cannot be cast to java.util.Date | Erro ao gerar relatório
+
+28/06/2015 21:01:31 | Report Error | java.lang.String cannot be cast to java.util.Date | Erro ao gerar relatório
+
+28/06/2015 22:04:03 | Insert Task |  | INSERT INTO sprint_tasks VALUES (DEFAULT , 'testesteste', 'pretto pretto pretto', 9, 'Baixo', 'Planejado', 1, 250, null, '28/06/2015', null, 10, 2, 'Em pausa' ) returning idsprint_tasks
+
+28/06/2015 22:09:29 | Sprint Insert Error | ERROR: syntax error at or near ","
+  Posição: 89 | INSERT INTO sprint VALUES (DEFAULT, 'teste testeteds', '28/06/2015', '07/07/2015', 800, , 1) returning idsprint
+
+28/06/2015 22:11:23 | Sprint Insert Error | ERROR: syntax error at or near ","
+  Posição: 73 | INSERT INTO sprint VALUES (DEFAULT, 'testestes', '28/06/2015', '', 258, , 1) returning idsprint
+
+28/06/2015 22:12:33 | Insert Sprint |  | INSERT INTO sprint VALUES (DEFAULT, 'sdsdsdsdsd', '28/06/2015', '07/07/2015', 258, 0, 1) returning idsprint
+
+28/06/2015 22:12:56 | Delete Sprint |  | DELETE FROM sprint WHERE idsprint = 13
+
+28/06/2015 22:13:36 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 9, classification = 'Baixo', title = 'testesteste', info = 'pretto pretto pretto', item_type = 'Planejado', status = 1, estimated = 250, duration = 0, proccess_started = '28/06/2015', proccess_finished = null, idsprint = 10, scrum_user = 2, status2 = 'Iniciado' WHERE idsprint_tasks = 7
+
+28/06/2015 22:27:44 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 2, estimated = 222, duration = 260, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 1, status2 = 'Em pausa' WHERE idsprint_tasks = 3
+
+28/06/2015 22:28:59 | Update Item |  | UPDATE sprint_items SET title = 'titulo do item', info = 'desc do item', classification = 'Muito Alto', item_type = 'Planejado', status = 1, estimated = 500, duration = 770, proccess_started = '30/06/2015', proccess_finished = null, sprint = 11 where idsprint_items = 10
+
+28/06/2015 22:29:47 | Update Address  |  | UPDATE address SET address = 'sasa',district = 'saassa',city = 'assaa',uf = 'as',state = 'saasas' where idaddress = 19
+
+28/06/2015 22:29:47 | Update User |  | UPDATE scrum_user SET name = 'teste', email = 'mail',phone = '(51)5151-5515',login = 'tes',password = '123',user_type  = 3, ref_address  = 1, ref_team = 0 WHERE iduser = 20
+
+28/06/2015 22:29:47 | Select Error | ResultSet não está posicionado corretamente, talvez você precise chamar next. | SELECT * FROM team WHERE idteam = 0
+
+28/06/2015 22:29:47 | Table Data Error | null | SELECT * FROM scrum_user WHERE name LIKE '%%' ORDER BY iduser
+
+28/06/2015 22:37:14 | Update Task |  | UPDATE sprint_tasks SET  ref_item = 10, classification = 'Baixo', title = 'sdsdds', info = 'dsdsdsddsd', item_type = 'Planejado', status = 2, estimated = 222, duration = 260, proccess_started = '27/06/2015', proccess_finished = null, idsprint = 11, scrum_user = 20, status2 = 'Iniciado' WHERE idsprint_tasks = 3
+
+28/06/2015 22:37:22 | Select Error | ResultSet não está posicionado corretamente, talvez você precise chamar next. | SELECT * FROM team WHERE idteam = 0
+
+28/06/2015 22:37:22 | Table Data Error | null | SELECT * FROM scrum_user WHERE name LIKE '%%' ORDER BY iduser
+
+28/06/2015 22:37:32 | Update Address  |  | UPDATE address SET address = '',district = '',city = '',uf = '',state = '' where idaddress = 0
+
+28/06/2015 22:37:32 | Update User |  | UPDATE scrum_user SET name = 'teste', email = 'mail',phone = '(51)5151-5515',login = 'tes',password = '123',user_type  = 4, ref_address  = 0, ref_team = 0 WHERE iduser = 20
+
+28/06/2015 22:37:32 | Select Error | ResultSet não está posicionado corretamente, talvez você precise chamar next. | SELECT * FROM team WHERE idteam = 0
+
+28/06/2015 22:37:32 | Table Data Error | null | SELECT * FROM scrum_user WHERE name LIKE '%%' ORDER BY iduser
+
