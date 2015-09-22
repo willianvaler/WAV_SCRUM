@@ -179,8 +179,6 @@ public class FrmLogin
             if (canLogin) {
                 FrmLauncherApplication launcher = new FrmLauncherApplication();
                         launcher.setCurrentUser(u);
-//                ImageIcon img = new ImageIcon("/icons/icon-scrum.png");
-//                launcher.setIconImage(img.getImage());
                         launcher.setVisible( true );
                         dispose();
             }
@@ -191,7 +189,7 @@ public class FrmLogin
         }
         catch( Exception e )
         {
-            JOptionPane.showMessageDialog( null, "Usuario ou senha invalidos." );
+            JOptionPane.showMessageDialog( null, "Erro ao consultar usuários." );
             e.printStackTrace();
         }
         
